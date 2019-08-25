@@ -2,7 +2,7 @@
 
 data "template_file" "myapp-task-definition-template" {
   template               = "${file("templates/app.json.tpl")}"
-  vars {
+  vars = {
     REPOSITORY_URL = "${replace("${aws_ecr_repository.myapp.repository_url}", "https://", "")}"
   }
 }
@@ -38,7 +38,7 @@ resource "aws_elb" "myapp-elb" {
   subnets = ["${aws_subnet.main-public-1.id}","${aws_subnet.main-public-2.id}"]
   security_groups = ["${aws_security_group.myapp-elb-securitygroup.id}"]
 
-  tags {
+  tags = {
     Name = "myapp-elb"
   }
 }
