@@ -7,12 +7,6 @@ variable "PATH_TO_PRIVATE_KEY" {
 variable "PATH_TO_PUBLIC_KEY" {
   default = "mykey.pub"
 }
-variable "MYAPP_VERSION" {
-  default = "GIT_COMMIT"
-}
-variable "MYAPP_SERVICE_ENABLE" {
-  default = "1"
-}
 variable "ECS_INSTANCE_TYPE" {
   default = "t2.micro"
 }
