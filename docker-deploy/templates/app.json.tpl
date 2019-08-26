@@ -1,9 +1,9 @@
 [
   {
     "essential": true,
-    "memory": 256,
+    "memory": 512,
     "name": "myapp",
-    "cpu": 256,
+    "cpu": 512,
     "image": "${REPOSITORY_URL}:${APP_VERSION}",
     "workingDirectory": "/app",
     "command": ["npm", "start"],
