@@ -4,7 +4,7 @@
     "memory": 256,
     "name": "myapp",
     "cpu": 256,
-    "image": "${REPOSITORY_URL}:${GIT_VERSION}",
+    "image": "${REPOSITORY_URL}:${GIT_COMMIT}",
     "workingDirectory": "/app",
     "command": ["npm", "start"],
     "portMappings": [
