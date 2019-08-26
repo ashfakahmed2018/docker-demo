@@ -13,6 +13,9 @@ variable "ECS_INSTANCE_TYPE" {
 variable "MYAPP_VERSION" {
   default = "GIT_COMMIT"
 }
+variable "MYAPP_SERVICE_ENABLE" {
+  default = "1"
+}
 variable "ECS_AMIS" {
   type = "map"
   default = {
