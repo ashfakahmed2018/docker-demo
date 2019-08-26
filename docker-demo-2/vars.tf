@@ -10,6 +10,9 @@ variable "PATH_TO_PUBLIC_KEY" {
 variable "ECS_INSTANCE_TYPE" {
   default = "t2.micro"
 }
+variable "MYAPP_VERSION" {
+  default = "GIT_COMMIT"
+}
 variable "ECS_AMIS" {
   type = "map"
   default = {
